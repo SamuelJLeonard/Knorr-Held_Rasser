@@ -1,6 +1,12 @@
-The incidence of a particular non-communicable disease may be influenced by spatial risk factors.  If this is the case, adjacent regions within a given country that experience high exposure to such spatial risk factors would share a high incidence of this disease.  These adjacent regions form a cluster of high disease incidence.  Similarly, areas at low risk will form clusters of low disease incidence.  In their 2000 paper "Bayesian Detection of Clusters and Discontinuities in Disease Maps" Knorr-Held and Rasser develop a Bayesian nonparametric algorithm for the detection of such disease clusters, and apply it to a data on oral cancer rates in Germany in the late 1980s.
+This repository contains R code for implementing a Monte Carlo Markov Chain described in "Bayesian Detection of Clusters and Discontinuities in Disease Maps" by Knorr-Held and Rasser (Biometrics 2000).  Their paper is a Bayesian, nonparametric algorithm for detecting spatial clusters of elevated disease risk.  
 
-This repository contains R code for implementing this algorithm.  I wrote most of this code during the summer of 2017.
+Each folder contains a function and a quick description of what the function does. 
+
+
+
+
+
+
 
 
 
