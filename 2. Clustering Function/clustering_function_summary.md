@@ -10,10 +10,6 @@ The distance between a non-center and two separate cluster centers could be equa
 
 **Method**
 
-Once we've selected *k* cluster centers at random, create a list of vectors.  Fill the first element of each vector with the cluster centers.
+Create a matrix in which the entry *i*, *j* is the distance between non-center *i* and cluster center *j*.
 
-Then create a matrix in which the entry *i*, *j* is the distance between non-center *i* and cluster center *j*.
-
-The first instance of the minimum value of each row is the cluster center that each corresponding non-center will join.  Combine the non-centers corresponding to the same cluster center into vectors.
-
-Finally, combine the lsit of cluster centers with the list of non-centers that correspond to the same center.
+The first instance of the minimum value of each row is the cluster center that each corresponding non-center will join.  Create a list of vectors in which each vector contains the non-centers corresponding to the same cluster center.  Insert the correct cluster center into the first element of each of these vectors.
