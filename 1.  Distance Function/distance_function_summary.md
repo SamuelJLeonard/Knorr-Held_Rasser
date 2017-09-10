@@ -10,16 +10,13 @@ To implement their MCMC we will need the distances between each pair of regions,
 
 Contained in this folder is a function which generates this distance matrix from a given adjacency matrix.  An adjacency 
 matrix is a matrix in which entry *i, j* is *1* if regions *i* and *j* are neighbors, and *0* otherwise.  In this case let 
-the diagonal of the adjacency matrix be *0*s.  (The diagonal could just as easily be *1*, we are not concerned with distances
-of regions to themselves at all.  Using *0* makes the math slightly faster later on).
+the diagonal of the adjacency matrix be *1*s.  
 
 **Method**
 
-Our goal is a matrix containing the distances between each region.  Let *A* be our adjacency matrix.  And consider the list of 
-*n* matrices *A*,  (*A* * *A*),  (*A* * *A* * *A*),  .... ,  (*A^n*).
+Our goal is a matrix containing the distances between each region.  Let *A* be our adjacency matrix.  And consider the list of *n* matrices *A*,  (*A* * *A*),  (*A* * *A* * *A*),  .... ,  (*A^n*).
 
-The key insight here is that the distance between arbitrary regions *i* and *j* is the location in the above list of first matrix 
-for which entry *i*, *j* is nonzero.
+The key insight here is that the distance between arbitrary regions *i* and *j* is the location in the above list of first matrix for which entry *i*, *j* is nonzero.
 
 For example, if regions *i* and *j* are adjacent then their distance is obviously *1*, the first matrix in the list.
 
@@ -36,5 +33,5 @@ list of matrices described above occurs in *(A * A)*, the second element of the 
 
 It's not hard to see that this logic holds for further powers of *A*.  
 
-The R function in this folder duplicates this logic.  Create a list of all possible powers of *A*, then find for each pair *i*
+The R function in this folder duplicates this logic.  Create a list of all possible powers of *A* then find for each pair *i*
 and *j* the first nonzero entry.
