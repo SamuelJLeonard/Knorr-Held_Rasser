@@ -5,8 +5,11 @@ boundary.count <- function(adj){
   d = 1
   dummy = 0
   
-  for (i in 1:num){
+  while (i < num){
     adj.powers[ , , i] = adj %^% i
+    if (!(0 %in% adj.powers[ , , i])){
+      i = num
+      }
   }
   
   for (j in 1:(num-1)){
