@@ -1,6 +1,8 @@
-This repository contains R code for implementing a Monte Carlo Markov Chain described in "Bayesian Detection of Clusters and Discontinuities in Disease Maps" by Knorr-Held and Rasser (Biometrics 2000).  Their paper is a Bayesian, nonparametric algorithm for detecting spatial clusters of elevated disease risk.  
+This repository contains R code I wrote in the summer of 2017 for implementing a Monte Carlo Markov Chain described in "Bayesian Detection of Clusters and Discontinuities in Disease Maps" by Knorr-Held and Rasser (Biometrics 2000).  Their paper is a Bayesian, nonparametric algorithm for detecting spatial clusters of elevated disease risk.  
 
-Each folder contains a function and a quick description of what the function does. 
+I included a few pages from a summary of my implementation of their algorithm in this respository: "Knorr-Held and Rasser Model Summary".  You can get a sense of the details of their MCMC there.
+
+The first two code files deal with generating cluster configurations.  The remaining files implement the six steps of the MCMC.  This order mimics the author's presentation of their work in their paper.
 
 
 
