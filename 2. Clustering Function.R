@@ -1,5 +1,5 @@
-# Given a distance matrix and a vector of cluster centers 'Gk', this function returns the corresponding clustering configuration
-as a list.
+# Given a distance matrix and a vector of cluster centers 'Gk', this function returns the corresponding clustering 
+# configuration as a list.
 
 set.clusters <- function(k, distances, Gk, n){
   regions <- seq(1:n)
