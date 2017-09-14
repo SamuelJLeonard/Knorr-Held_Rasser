@@ -4,6 +4,7 @@ I included a few pages from a summary of my implementation of their algorithm in
 
 The first two code files deal with generating cluster configurations.  The remaining files implement parts of the steps of the MCMC.  This order mimics the author's presentation of their work in their paper.
 
+The PDF "Median Height Plot" is one visualization of the results of this algorithm.  The relative risk of each region was stored at 10,000 iterations of the MCMC.  This plot represents the median of these 10,000 observations for each of the 544 regions of Germany.
 
 
 
