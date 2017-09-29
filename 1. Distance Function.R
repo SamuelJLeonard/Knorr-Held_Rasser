@@ -1,4 +1,5 @@
 # Given an adjacency matrix 'adj', this function returns a matrix in which entry i, j is the distance between regions i and j.
+# Note: The operation %^% is matrix exponentiation.  This operation is part of the expm package.
 
 boundary.count <- function(adj){
   num = sqrt(length(adj))
