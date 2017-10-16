@@ -2,7 +2,9 @@ This repository contains R code I wrote for implementing a Monte Carlo Markov Ch
 
 To run the MCMC yourself, download the two R files 'Knorr Held MCMC.R' and 'Knorr Held Functions and Data.R'.  Then open the file 'Knorr Held MCMC.R'.  
 
-In this respository you'll also see a PDF containing a brief description of the Knorr-Held and Rasser algorithm.  
+In this respository you'll also see a PDF containing a brief description of the Knorr-Held and Rasser algorithm ('Knorr-Held and Rasser Model Description.pdf'), and a plot of what the results of this algorithm look like when applied to their German oral cancer data set ('Median Height Plot.pdf').
+
+
 
 
 
