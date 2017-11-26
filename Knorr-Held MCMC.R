@@ -5,33 +5,37 @@
 
 
 ## INSTRUCTIONS: ##
-
-  ##  1.  Download the 'Knorr Held Functions and Data.R' file, if you haven't already.  
-  ##  2.  Install and load the packages below.  You may have them already if you use R a lot.    
-  ##  3.  Read the functions file by running the two lines under '# Functions'.  Select 'Knorr Held Functions and Data.R' whe prompted.
-  ##  4.  You can now run the algorithm with the German dataset.  It's the code under the MCMC heading.  I have set 10,000 iterations
-  ##      after 10,000 burn-in.  The algorithm will take about 3 minutes to run.
-  ##  5.  You can use code under the RESULTS heading to view the some of the MCMC results.  This is a small run, so 
+  
+  ##  1.  Download the 'Knorr Held Functions and Data.R' and 'district_distances.txt' files, if you haven't already.
+  ##  2.  Install and load the 'spam' package by running the two lines below the '# Packages' comment. 
+  ##  3.  Read the 'district_distances.txt' file by running the two lines under '# Get Distances'.  You will be prompted to find this text 
+  ##      file on your hard drive.
+  ##  4.  Read the 'Knorr Held functions and data.R' file by running the two lines under '# Functions'.  Select 
+  ##      'Knorr Held Functions and Data.R' when prompted.
+  ##  5.  You can now run the algorithm with the German dataset by running the code under the '#### MCMC ####'  heading.  I have set 10,000 iterations
+  ##      after 10,000 burn-in.  The algorithm wil take about 3 minutes to run
+  ##  6.  You can use code under the RESULTS heading to view the some of the MCMC results.  This is a small run, so 
   ##      you will see variation in the acceptance rates and distribution of k (the number of clusters).  
 
+  ## NOTE: you can change the burn-in and stored values by opening and editing the 'Knorr Held functions and data.R' file.
 
-# Packages:
 
-install.packages('expm')
+# Load 'spam' package:
+
 install.packages('spam')
-install.packages('nimble')
-install.packages('stats')
-library('expm')
 library('spam')
-library('nimble')
-library('stats')
 
-# Functions:
+# Get distance matrix
+
+DISTANCES_FILE <- file.choose()
+distances <- scan(DISTANCES_FILE, sep = "")
+distances <- matrix(distances, ncol = 544, byrow = TRUE)
+
+
+# Get data and functions:
 
 FUNCTIONS_FILE <- file.choose()
 source(FUNCTIONS_FILE)
-
-    
 
 
 #####################################################
