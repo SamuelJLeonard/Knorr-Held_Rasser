@@ -12,7 +12,7 @@ Once you have these files on your hard drive, open 'Knorr Held MCMC.R' with R St
 
 #### How does this algorithm work?  What do the results mean?  What are the mathematical details and where can I learn more?
 
-Further details are in the PDF 'Model Implementation Summary.pdf'.  You can also read Knorr-Held and Rasser's fantastic paper for a more thorough treatment.
+Further details are in the PDF 'Knorr-Held Model Implementation.pdf'.  You can also read Knorr-Held and Rasser's fantastic paper for a more thorough treatment.
 
 
 
